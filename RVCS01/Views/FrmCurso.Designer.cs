@@ -28,13 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.lsbCursos = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(230, 173);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 0;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // lsbCursos
+            // 
+            this.lsbCursos.FormattingEnabled = true;
+            this.lsbCursos.Location = new System.Drawing.Point(12, 72);
+            this.lsbCursos.Name = "lsbCursos";
+            this.lsbCursos.Size = new System.Drawing.Size(520, 95);
+            this.lsbCursos.TabIndex = 1;
+            this.lsbCursos.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // FrmCurso
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(544, 338);
+            this.Controls.Add(this.lsbCursos);
+            this.Controls.Add(this.btnListar);
+            this.Name = "FrmCurso";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.ListBox lsbCursos;
     }
 }
 
