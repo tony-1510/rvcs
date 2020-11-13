@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RVCS01
 {
-    public partial class Form1 : Form
+    public partial class FrmCurso : Form
     {
-        public Form1()
+        public FrmCurso()
         {
             InitializeComponent();
         }

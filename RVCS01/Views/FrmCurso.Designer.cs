@@ -1,6 +1,6 @@
 ﻿namespace RVCS01
 {
-    partial class Form1
+    partial class FrmCurso
     {
         /// <summary>
         /// Variável de designer necessária.
